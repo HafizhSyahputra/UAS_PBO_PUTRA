@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.ManageStock">
+   <children>
+      <Label layoutX="295.0" layoutY="252.0" prefHeight="93.0" prefWidth="150.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-padding: 10px;" text="Form Product" textFill="#1a402c" />
+      <TableView fx:id="stockTable" prefHeight="242.0" prefWidth="686.0">
+         <columns>
+            <TableColumn fx:id="productIdColumn" prefWidth="86.80001986026764" text="Product Id">
+               <cellValueFactory><PropertyValueFactory property="productID" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="productNameColumn" prefWidth="99.79998016357422" text="Product Name">
+               <cellValueFactory><PropertyValueFactory property="productName" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="supplierIdColumn" prefWidth="96.60000610351562" text="Supplier Id">
+               <cellValueFactory><PropertyValueFactory property="supplierID" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="categoryColumn" prefWidth="105.5999755859375" text="Category">
+               <cellValueFactory><PropertyValueFactory property="category" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="unitPriceColumn" prefWidth="132.20004272460938" text="Unit Price">
+               <cellValueFactory><PropertyValueFactory property="unitPrice" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="quantityColumn" prefWidth="163.19998779296873" text="Quantity">
+               <cellValueFactory><PropertyValueFactory property="quantity" /></cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label style="-fx-font-size: 20; -fx-font-weight: bold; -fx-padding: 10px;" text="Add Stock" />
+      <HBox spacing="10" style="-fx-padding: 5px;">
+         <Label style="-fx-font-weight: bold;" text="Product ID:" />
+         <TextField fx:id="productIdField" style="-fx-pref-width: 200px;" />
+      </HBox>
+      <HBox spacing="10" style="-fx-padding: 5px;">
+         <Label style="-fx-font-weight: bold;" text="Product Name:" />
+         <TextField fx:id="productNameField" style="-fx-pref-width: 200px;" />
+      </HBox>
+      <HBox spacing="10" style="-fx-padding: 5px;">
+         <Label style="-fx-font-weight: bold;" text="Supplier ID:" />
+         <ComboBox fx:id="supplierIdField" style="-fx-pref-width: 200px;" />
+      </HBox>
+      <HBox spacing="10" style="-fx-padding: 5px;">
+         <Label style="-fx-font-weight: bold;" text="Category:" />
+         <TextField fx:id="categoryField" style="-fx-pref-width: 200px;" />
+      </HBox>
+      <HBox spacing="10" style="-fx-padding: 5px;">
+         <Label style="-fx-font-weight: bold;" text="Unit Price:" />
+         <TextField fx:id="unitPriceField" style="-fx-pref-width: 200px;" />
+      </HBox>
+      <HBox spacing="10" style="-fx-padding: 10px;">
+         <Button onAction="#handleSave" style="-fx-font-weight: bold; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Save" />
+         <Button onAction="#handleCancel" style="-fx-font-weight: bold; -fx-background-color: #f44336; -fx-text-fill: white;" text="Cancel" />
+      </HBox>
+   </children>
+</VBox>

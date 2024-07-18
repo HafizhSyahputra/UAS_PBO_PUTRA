@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Master">
+   <children>
+      <Pane fx:id="profilePane" prefHeight="462.0" prefWidth="826.0">
+         <children>
+            <Label layoutX="86.0" layoutY="14.0" prefHeight="92.0" prefWidth="175.0" text="Profile Admin">
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="123.0" prefHeight="17.0" prefWidth="125.0" text="Nama">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="160.0" prefHeight="17.0" prefWidth="125.0" text="Email">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="196.0" prefHeight="17.0" prefWidth="125.0" text="Phone">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="231.0" prefHeight="17.0" prefWidth="125.0" text="Address">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="editButton" layoutX="48.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleEditProfile" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: black;" text="Edit Profile" textFill="WHITE" />
+            <TextField fx:id="nameLabel" layoutX="134.0" layoutY="120.0" />
+            <TextField fx:id="emailLabel" layoutX="134.0" layoutY="157.0" />
+            <TextField fx:id="phoneLabel" layoutX="134.0" layoutY="193.0" />
+            <TextField fx:id="addressLabel" layoutX="134.0" layoutY="228.0" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

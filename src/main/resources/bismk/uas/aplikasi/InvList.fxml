@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.InvList">
+   <children>
+      <Pane prefHeight="370.0" prefWidth="614.0">
+         <children>
+            <Label contentDisplay="CENTER" layoutY="14.0" prefHeight="39.0" prefWidth="146.0" text="INVENTORI LIST" textAlignment="CENTER">
+               <font>
+                  <Font name="Poppins SemiBold" size="19.0" />
+               </font>
+            </Label>
+             <TableView fx:id="inventoryTableView" layoutY="64.0" prefHeight="242.0" prefWidth="610.0">
+                 <columns>
+                     <TableColumn fx:id="productNameColumn" prefWidth="113.5999813079834" text="Product Name">
+                         <cellValueFactory>
+                        <PropertyValueFactory property="ProductName" />
+                     </cellValueFactory>
+                     </TableColumn>
+                     <TableColumn fx:id="supplierNameColumn" prefWidth="88.00000762939453" text="Supplier">
+                         <cellValueFactory>
+                        <PropertyValueFactory property="SupplierName" />
+                     </cellValueFactory>
+                     </TableColumn>
+                     <TableColumn fx:id="quantityInStockColumn" text="Qty-in">
+                         <cellValueFactory>
+                        <PropertyValueFactory property="QuantityInStock" />
+                     </cellValueFactory>
+                     </TableColumn>
+                     <TableColumn fx:id="qtyOutColumn" prefWidth="50.4000244140625" text="Qty-out">
+                         <cellValueFactory>
+                        <PropertyValueFactory property="quantity" />
+                     </cellValueFactory>
+                     </TableColumn>
+                     <TableColumn fx:id="unitPriceColumn" prefWidth="112.0" text="Price">
+                         <cellValueFactory>
+                        <PropertyValueFactory property="UnitPrice" />
+                     </cellValueFactory>
+                     </TableColumn>
+                     <TableColumn fx:id="Notes" prefWidth="155.199951171875" text="Notes">
+                     </TableColumn>
+                 </columns>
+             </TableView>
+         </children>
+      </Pane>
+   </children>
+</HBox>

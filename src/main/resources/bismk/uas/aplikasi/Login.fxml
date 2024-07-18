@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Login">
+   <children>
+      <Pane fx:id="rootPane" prefHeight="418.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="108.0" layoutY="119.0" prefHeight="35.0" prefWidth="74.0" text="User ID">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="184.0" prefHeight="35.0" prefWidth="91.0" text="Password">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="237.0" layoutY="119.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your user id" />
+            <PasswordField fx:id="password" layoutX="237.0" layoutY="184.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your password" />
+            <Button fx:id="login" layoutX="282.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: green;" text="Sign In" textFill="WHITE" />
+            <Button fx:id="cancel" layoutX="366.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE" />
+            <Pane layoutX="34.0" layoutY="332.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #EEEEEE;">
+               <children>
+                  <Label layoutX="204.0" layoutY="6.0" prefHeight="35.0" prefWidth="134.0" text="Belum punya akun?">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="daftar" layoutX="329.0" layoutY="12.0" onAction="#handleRegisterLink" text="Daftar">
+                     <font>
+                        <Font name="Poppins Medium" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="70.0" layoutY="29.0" prefHeight="35.0" prefWidth="134.0" text="Lupa kata sandi?">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="forgot" layoutX="176.0" layoutY="35.0" text="temukan kata sandi">
+                     <font>
+                        <Font name="Poppins Medium" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <TextField fx:id="passwordText" layoutX="237.0" layoutY="184.0" prefHeight="35.0" prefWidth="203.0" visible="false" />
+            <CheckBox fx:id="showPassword" layoutX="237.0" layoutY="222.0" onAction="#handleShowPassword" text="Show Password" textFill="#969494" />
+            <Label fx:id="userLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="35.0" prefHeight="35.0" prefWidth="285.0" text="USER" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Poppins SemiBold" size="17.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#122e04" height="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="box-shadow" width="252.0" />
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</HBox>

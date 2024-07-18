@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="356.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Transaction">
+   <Label text="History Transaksi" textFill="#364e96">
+      <font>
+         <Font name="Poppins Medium" size="18.0" />
+      </font>
+   </Label>
+   <Region prefHeight="29.0" prefWidth="642.0" />
+   <TableView fx:id="OrderTableView" layoutX="16.0" layoutY="352.0" prefHeight="233.0" prefWidth="641.0">
+      <columns>
+         <TableColumn text="NO">
+            <cellValueFactory>
+               <PropertyValueFactory property="NO" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn text="Product Id">
+            <cellValueFactory>
+               <PropertyValueFactory property="ProductID" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="119.20001220703125" text="Product Name">
+            <cellValueFactory>
+               <PropertyValueFactory property="ProductName" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="119.20001220703125" text="Customer Name">
+            <cellValueFactory>
+               <PropertyValueFactory property="CustomerName" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="56.0" text="Qty">
+            <cellValueFactory>
+               <PropertyValueFactory property="Qty" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="100.79995727539062" text="Price">
+            <cellValueFactory>
+               <PropertyValueFactory property="Price" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="84.80002441406248" text="Amount">
+            <cellValueFactory>
+               <PropertyValueFactory property="Amount" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+   </TableView>
+</VBox>

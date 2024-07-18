@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Register">
+   <children>
+      <Pane prefHeight="579.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="108.0" layoutY="109.0" prefHeight="35.0" prefWidth="74.0" text="User ID">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="174.0" prefHeight="35.0" prefWidth="91.0" text="Password">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField id="username" fx:id="username" layoutX="237.0" layoutY="109.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your user id" />
+            <TextField id="password" fx:id="password" layoutX="237.0" layoutY="174.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your password" />
+            <TextField id="phone" fx:id="phone" layoutX="237.0" layoutY="239.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your Phone Number" />
+            <TextField id="email" fx:id="email" layoutX="237.0" layoutY="299.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your Email" />
+            <TextField id="address" fx:id="address" layoutX="237.0" layoutY="358.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter your Address" />
+            <Line endX="395.800048828125" endY="-7.62939453125E-6" layoutX="136.0" layoutY="90.0" startX="-118.60000610351562" startY="-7.62939453125E-6" stroke="#d7d6d6" />
+            <Line endX="378.79998779296875" endY="-1.52587890625E-5" layoutX="135.0" layoutY="418.0" startX="-100.0" stroke="#d7d6d6" />
+            <Button id="daftar" fx:id="login" layoutX="282.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: green;" text="Sign Up" textFill="WHITE" />
+            <Button fx:id="cancel" layoutX="366.0" layoutY="436.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE" />
+            <Label layoutX="108.0" layoutY="239.0" prefHeight="35.0" prefWidth="91.0" text="Phone">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="299.0" prefHeight="35.0" prefWidth="91.0" text="Email">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutX="34.0" layoutY="485.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #C0C0C0;">
+               <children>
+                  <Label layoutX="204.0" layoutY="6.0" prefHeight="35.0" prefWidth="134.0" text="Sudah memiliki akun?">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="masuk" layoutX="338.0" layoutY="12.0" onAction="#handlemasuklink" text="Masuk">
+                     <font>
+                        <Font name="Poppins Medium" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="70.0" layoutY="29.0" prefHeight="35.0" prefWidth="134.0" text="Lupa kata sandi?">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="forgot" layoutX="176.0" layoutY="35.0" text="temukan kata sandi">
+                     <font>
+                        <Font name="Poppins Medium" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Label layoutX="108.0" layoutY="358.0" prefHeight="35.0" prefWidth="91.0" text="Address">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="25.0" prefHeight="35.0" prefWidth="285.0" text="Register" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#04361c" height="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="box-shadow" width="262.0" />
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</HBox>

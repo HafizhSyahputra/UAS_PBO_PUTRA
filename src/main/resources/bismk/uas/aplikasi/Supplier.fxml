@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Supplier">
+   <children>
+      <Pane prefHeight="655.0" prefWidth="704.0">
+         <children>
+            <Label fx:id="supplierLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="41.0" prefHeight="35.0" prefWidth="285.0" text="FORM SUPPLIER" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Poppins SemiBold" size="13.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="box-shadow" width="282.0" />
+               </graphic>
+            </Label>
+            <Label layoutX="80.0" layoutY="99.0" prefHeight="35.0" prefWidth="102.0" text="SupplierID">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="164.0" prefHeight="35.0" prefWidth="150.0" text="Supplier Name">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="supplierId" layoutX="250.0" layoutY="99.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your supplier id" />
+            <TextField fx:id="supplierName" layoutX="250.0" layoutY="164.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your supplier name" />
+            <Label layoutX="78.0" layoutY="274.0" prefHeight="35.0" prefWidth="131.0" text="Address">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="address" alignment="TOP_LEFT" layoutX="250.0" layoutY="279.0" prefHeight="60.0" prefWidth="369.0" promptText="Address" />
+            <Label layoutX="78.0" layoutY="224.0" prefHeight="35.0" prefWidth="131.0" text="Contact Name">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contactName" layoutX="250.0" layoutY="224.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your contact" />
+            <Pane layoutX="79.0" layoutY="582.0" prefHeight="52.0" prefWidth="544.0" style="-fx-background-color: #E9EAEC;">
+               <children>
+                  <Button fx:id="save" layoutX="311.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Save" />
+                  <Button fx:id="cancel" layoutX="395.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #f44336; -fx-text-fill: white;" text="Cancel" />
+                  <Button fx:id="newData" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleNewData" opacity="0.4" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="New data" />
+               </children>
+            </Pane>
+            <Label layoutX="79.0" layoutY="365.0" prefHeight="35.0" prefWidth="131.0" text="City">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="city" layoutX="251.0" layoutY="365.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your city" />
+            <Label layoutX="78.0" layoutY="416.0" prefHeight="35.0" prefWidth="131.0" text="Postal Code">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="postalCode" layoutX="250.0" layoutY="416.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your postal code" />
+            <Label layoutX="80.0" layoutY="470.0" prefHeight="35.0" prefWidth="131.0" text="Country">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="country" layoutX="252.0" layoutY="470.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your country" />
+            <Label layoutX="80.0" layoutY="524.0" prefHeight="35.0" prefWidth="131.0" text="Phone">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phone" layoutX="252.0" layoutY="524.0" prefHeight="35.0" prefWidth="369.0" promptText="Enter your Phone Number" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

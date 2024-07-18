@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.Quantity">
+    <children>
+        <Label style="-fx-font-size: 20; -fx-font-weight: bold; -fx-padding: 10px;" text="Inventory Form" />
+        <HBox spacing="10" style="-fx-padding: 5px;">
+            <Label style="-fx-font-weight: bold;" text="Product ID:" />
+            <ComboBox fx:id="productIdComboBox" style="-fx-pref-width: 200px;" />
+        </HBox>
+        <HBox spacing="10" style="-fx-padding: 5px;">
+            <Label style="-fx-font-weight: bold;" text="Quantity in Stock:" />
+            <TextField fx:id="quantityInStockField" style="-fx-pref-width: 200px;" />
+        </HBox>
+        <HBox spacing="10" style="-fx-padding: 5px;">
+            <Label style="-fx-font-weight: bold;" text="Reorder Level:" />
+            <TextField fx:id="reorderLevelField" style="-fx-pref-width: 200px;" />
+        </HBox>
+        <HBox spacing="10" style="-fx-padding: 5px;">
+            <Label style="-fx-font-weight: bold;" text="Status:" />
+            <ComboBox fx:id="statusField" style="-fx-pref-width: 200px;">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Ready" />
+                        <String fx:value="Out Of Stock" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+        <Button mnemonicParsing="false" onAction="#handleSave" prefHeight="26.0" prefWidth="322.0" text="Save" />
+    </children>
+</VBox>

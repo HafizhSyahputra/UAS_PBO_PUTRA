@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="498.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bismk.uas.aplikasi.InventoryRequest">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="742.0">
+         <children>
+            <Label layoutX="37.0" layoutY="24.0" prefHeight="53.0" prefWidth="353.0" text="INVENTORY REQUEST FORM" textFill="#185307">
+               <font>
+                  <Font name="Poppins SemiBold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="101.0" prefHeight="19.0" prefWidth="42.0" text="Name">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="37.0" layoutY="122.0" />
+            <Label layoutX="37.0" layoutY="154.0" prefHeight="19.0" prefWidth="97.0" text="Item Request">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="37.0" layoutY="175.0" />
+            <Label layoutX="37.0" layoutY="210.0" prefHeight="19.0" prefWidth="168.0" text="Reason For Being Request">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="37.0" layoutY="236.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Low On Item" />
+            <CheckBox layoutX="37.0" layoutY="262.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Out of Stock" />
+            <CheckBox layoutX="37.0" layoutY="288.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="254.0" text="Need/Purpose for this item (specify below)" />
+            <Label layoutX="37.0" layoutY="316.0" prefHeight="19.0" prefWidth="296.0" text="Need/Purpose for the item being request">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="349.0" prefHeight="19.0" prefWidth="296.0" text="Date Request">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="382.0" prefHeight="19.0" prefWidth="296.0" text="Order Status - For Admin use Only">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="308.0" layoutY="313.0" prefHeight="25.0" prefWidth="181.0" />
+            <DatePicker layoutX="308.0" layoutY="346.0" prefHeight="25.0" prefWidth="131.0" />
+            <ComboBox fx:id="statusComboBox" layoutX="308.0" layoutY="379.0" prefWidth="150.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Success" />
+                     <String fx:value="Pending" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Button fx:id="sendButton" layoutX="257.0" layoutY="450.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: green;" text="Send" textFill="WHITE" />
+            <Button layoutX="402.0" layoutY="450.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
